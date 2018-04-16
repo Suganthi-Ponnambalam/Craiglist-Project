@@ -1,0 +1,9 @@
+package userinterface;
+
+import org.testng.annotations.Test;
+
+public class UITestcases {
+  @Test
+  public void f() {
+  }
+}

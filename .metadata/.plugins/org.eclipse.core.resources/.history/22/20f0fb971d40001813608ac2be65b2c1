@@ -1,0 +1,27 @@
+package userinterface;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class ApplicationInterface {
+
+	public static void main(String[] args) {
+		
+		WebDriver driver;
+		System.setProperty("webdriver.chrome.driver","C:\\Users\\muthu\\Downloads\\chromedriver.exe");	
+	    driver = new ChromeDriver();
+	   String baseurl ="https://sfbay.craigslist.org/";
+	   driver.manage().window().maximize();
+		driver.get(baseurl);
+	   driver.findElement(By.xpath("//*[@id=\'query\']")).sendKeys("toyota");
+	   driver.findElement(By.xpath("//*[@id=\'query\']")).click();
+		
+		
+		
+		
+
+	}
+
+}

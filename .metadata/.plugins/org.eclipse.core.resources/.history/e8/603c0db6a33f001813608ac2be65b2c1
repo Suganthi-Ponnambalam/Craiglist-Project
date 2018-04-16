@@ -1,0 +1,26 @@
+package userinterface;
+
+import java.util.concurrent.TimeUnit;
+
+import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+public class Login {
+	
+public static void main(String[] args) {
+	WebDriver driver;
+	System.setProperty("webdriver.chrome.driver","C:\\Users\\muthu\\Downloads\\chromedriver.exe");	
+    driver = new ChromeDriver();
+   String baseurl ="https://sfbay.craigslist.org/";
+   driver.manage().window().maximize();
+	driver.get(baseurl);
+	driver.findElement(By.xpath("//*[@id='postlks']/li[2]/a")).click();
+	driver.findElement(By.xpath("//*[@id='inputEmailHandle']")).sendKeys("testingdonehere@gmail.com");
+	driver.findElement(By.xpath("//*[@id='inputPassword']")).sendKeys("ShoppingForGoods12");
+	driver.findElement(By.xpath("/html/body/section/section/div/div[1]/form/div[3]/button")).click();
+	
+	
+	}
+
+}

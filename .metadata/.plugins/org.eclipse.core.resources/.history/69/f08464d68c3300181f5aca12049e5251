@@ -1,0 +1,19 @@
+package topics;
+
+import java.util.Scanner;
+
+public class Arithmetic {
+
+	public static void main(String[] args) {
+		Scanner input = new Scanner(System.in);
+		  System.out.println("enter the value for a=");
+		 int a = input.nextInt();
+		 System.out.println("enter the value for b =");
+		 int b = input.nextInt();
+		 int result= (a+b) / b;
+		 System.out.println("the result is = "+ result);
+		// TODO Auto-generated method stub
+
+	}
+
+}
